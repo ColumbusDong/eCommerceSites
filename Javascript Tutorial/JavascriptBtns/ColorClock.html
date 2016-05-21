@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Columbus Dong-->
+       <title>Javascript</title>
+
+       <style type = "text/css">
+         #text {
+           font-size: 200px;
+           text-align: center;
+           vertical-align: middle;
+           color: #FFFFFF;
+         }
+      </style>
+    </head>
+
+
+    <body>
+      <p id = "text"></p>
+
+      <script type = "text/javascript">
+      //Decalre Variables
+       var date;
+       var hour;
+       var min;
+       var sec;
+       var color;
+
+       function colorClock() {
+         //Get Data Object
+         date = new Date();
+
+         //Get Each Variable's Respective Value
+         hour = date.getHours();
+         min = date.getMinutes();
+         sec = date.getSeconds();
+
+         //Make Sure Values Have 2 Digits
+         if (hour <= 9) {
+           hour = "0" + hour;
+         }
+
+         if (min <= 9) {
+           min = "0" + min;
+         }
+
+         if (sec <= 9) {
+           sec = "0" + sec;
+         }
+
+         //Color Code
+         color = "#" + hour + min + sec;
+
+         //Change Text
+         document.getElementById("text").innerHTML = color;
+
+         //Change Background Color
+         document.body.style.background = color;
+
+         //Make Sure Function Loops Each Second Infinitely
+         setTimeout(colorClock, 1000);
+       }
+
+       //Call Function
+       colorClock();
+      </script>
+    </body>
+</html>

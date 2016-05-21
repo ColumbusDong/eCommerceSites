@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Columbus Dong-->
+       <title>SSL</title>
+        <style>
+            @font-face {
+               font-family: Hack;
+               src: url(files/Hack.ttf)
+             }
+            body {
+                font-size: 20px;
+                background-color: #163d85;
+                padding:0px;
+                margin: 0px;
+                font-family: Hack
+            }
+
+            p {
+              margin: 0px;
+              padding: 0px;
+            }
+
+
+
+            #foreground {
+              width: 70%;
+              background-color: #e3e1da;
+              height: 1800px;
+              padding: 0px;
+              margin:auto;
+            }
+
+            #title {
+              width: 100%;
+              text-align: center;
+              height: 100px;
+              font-size: 60px;
+              padding: 0px;
+              margin: 0px;
+            }
+
+            #title hr {
+              width: 90%;
+              height: 5px;
+              color: black;
+              background-color: black;
+              border: none;
+              padding: 0px;
+              margin: auto;
+            }
+
+            #content {
+              width: 100%;
+              height: 850px;
+              padding: 5px;
+            }
+
+            #gif {
+              width: 300px;
+              height: 300px;
+              align: top;
+            }
+
+            .textwrapL {
+              float:right;
+              margin:3px;
+            }
+
+            #videoBox {
+              width: 100%;
+              height: 400px;
+              text-align: center;
+              padding: 0px;
+              margin: 0px;
+            }
+       </style>
+    </head>
+
+    <body>
+
+      <div style = "float:left">
+        <p style = "font-size: 16px; color: #e3e1da;">A Techno Beat for You </p>
+        <br/>
+        <audio controls style = "width: 200px;">
+          <source src="files/beat.wav" type="audio/wav">
+        Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div id = "foreground">
+        <!--Title-->
+        <div id = "title">
+          <img src = "files/title.gif" alt = "titleGif" style = "width: 50%; height:70px;" />
+          <hr />
+        </div>
+
+        <!--Content Beginning-->
+        <div id = "content">
+            <p>
+              <img alt = "SSL Lock" src = "files/lock.gif" id = "gif" class = "textwrapL">
+              SSL is short for Secure Socket Layers and was developed by an organization called Netscape. It is a process where the data that is sent to and from a user and a server is either encrypted or decrepted, based on whether it is being sent out or received; keeping the data secure and protected from third parties.
+              <br />
+              <br />
+              A certificate is sort of like a digital passport for SSL and when one is being used, it is represented by a lock icon in web browsers or by a green address bar. These certificates verify that the site is safe and that the information on there will remain private between the server/company and the computer/user. In the case that the site does not have this lock icon or green address bar, it means it is likely that the site has not been secured by an SSL certificate and there is a potential risk of information being intercepted. Trust is a big factor between the consumer and the producer, if the consumer does not trust the website, then he or she will not buy from it, it&#39;s as simple as that. If the user can not trust that their info won&#39;t be stolen, then they won&#39;t buy from that site and look elsewhere at another site that has been SSL certified. To get a certificate, one needs to register for one from a certificate authority.
+              <br />
+              <br />
+              A certificate authority (CA) is an entity that provides SSL certificates to verified organizations and individuals. These Certification authorities need to keep detailed records of their issued certificates to make sure the procedures that are outlined are being followed. There are many CAs that charge for their services such as VeriSign, however, there are free CAs out there on the internet as well. Some CAs may charge differently than others, like products, they all have their own prices and some even being free, but there is no real difference between them. Regardless of which CAs provides the certificate, the information is still being secured, however, it is more of a matter of brand name, trust, and reliability. For example, if a big corporation had to choose between a newer free service and VeriSign, they would likely go with VeriSign because it has been in the business longer and is more trustworthy than a new free service.
+            </p>
+        </div>
+
+        <!--Video-->
+        <p style = "text-align: center;">Check Out the Video Below for More Information</p>
+        <div id = "videoBox">
+          <video width = "600" height = "400" controls>
+            <source src = "files/SSLExplained.mp4" type = "video/mp4"/>
+            Your Browswer does not support the video tag.
+          </video>
+        </div>
+
+        <div id = "quiztime" style = "width: 80%; text-align: center;">
+          <p style = "text-align: center;">Quiz Time</p>
+
+          <form method = "post action" = "mailto:dongco1013@daretolearn.org">
+            <p>
+              1. It is bad to have a green address bar on a web site? <br />
+              <input name = "q1" id = "q1" type = "radio" value = "True" required>True
+              <input name = "q1" id = "q1" type = "radio" value = "False" required>False
+            </p>
+            <br />
+            <p>
+              2. CA stands for California <br />
+              <input name = "q2" id = "q2" type = "radio" value = "True" required>True
+              <input name = "q2" id = "q2" type = "radio" value = "False" required>False
+            </p>
+            <br />
+            <p>
+              3. What do you need to be SSL verified? <br />
+              <input name = "q3" id = "q3" type = "radio" value = "plaque" required>A Plaque
+              <input name = "q3" id = "q3" type = "radio" value = "trophy" required>A Trophy
+              <input name = "q3" id = "q3" type = "radio" value = "certificate" required>A Certificate
+            </p>
+            <br />
+            <p>
+              4. Name 1 Trustworthy CA <br />
+              <input name = "q4" placeholder = "Name" Required>
+            </p>
+            <br />
+            <p>
+              5. What does SSL stand for? <br />
+              <input name = "q5" placeholder = "???" Required>
+            </p>
+            <br />
+            <p>
+              <input type = "submit" value = "Submit Form">
+              <input type = "reset" value = "Reset Form">
+            </p>
+          </form>
+        </div>
+
+        </div>
+
+
+      </div>
+    </body>
+</html>

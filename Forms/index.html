@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forms</title>
+  </head>
+
+  <body>
+    <h1 style = "text-align: center;">Manteo High School Vrablic's Calculus Alumini</h1>
+
+    <p>
+      <form method = "post action" = "mainto:dongco1013@daretolearn.org">
+        At any time, if you were a student of Frank Vrablic's Calculus class, please help us gather a bit more information about this class.
+    </p>
+    <p>
+      <input name = "student" id = "student" type = "radio" value = "yes" required>Yes
+      <input name = "student" id = "student" type = "radio" value = "no" required>No
+    </p>
+
+    <p>
+      If you answered yes to above, what is your name? <br />
+      <input name = "fname" placeholder = "First Name">
+      <input name = "lname" placeholder = "Last Name">
+    </p>
+
+    <p>
+      What year did you have Frank Vrablic as a teacher? <br />
+      <select name="grad year" size="1">
+        <option>1975
+        <option>1976
+        <option>1977
+        <option>1978
+        <option>1979
+        <option>1980
+        <option>1981
+        <option>1982
+        <option>1983
+        <option>1984
+        <option>1985
+        <option>1986
+        <option>1987
+        <option>1988
+        <option>1989
+        <option>1990
+        <option>1991
+        <option>1992
+        <option>1993
+        <option>1994
+        <option>1995
+        <option>1996
+        <option>1997
+        <option>1998
+        <option>1999
+        <option>2000
+        <option>2001
+        <option>2002
+        <option>2003
+        <option>2004
+        <option>2005
+        <option>2006
+        <option>2007
+        <option>2008
+        <option>2009
+        <option>2010
+        <option>2011
+        <option>2012
+        <option>2013
+        <option>2014
+        <option>2015
+        <option>2016
+        </select>
+    </p>
+
+    <p>
+      For what classes did you have Frank Vrablic for? <br />
+      <input name="subjects" id="subjects" type="checkbox" value="algebra1">Algebra 1
+      <input name="subjects" id="subjects" type="checkbox" value="geometry">Geometry
+      <input name="subjects" id="subjects" type="checkbox" value="algebra2">Algebra 2
+      <input name="subjects" id="subjects" type="checkbox" value="afm">Advanced Modeling and Functions
+      <input name="subjects" id="subjects" type="checkbox" value="precalc">Pre-Calculus
+      <input name="subjects" id="subjects" type="checkbox" value="abcalc">AP AB Calculus
+      <input name="subjects" id="subjects" type="checkbox" value="bccalc">AP BC Calculus
+    </p>
+
+    <p>
+      How would you rate him overall? <br />
+      <input type="range" min="0" max="10" step="1" value="1">
+    </p>
+
+    <p>
+      On average, how many times did he say the word &rdquo;Disgusting&rdquo; per week? <br />
+      <input type="number" min="0" max="30" step="1" value="0">
+    </p>
+
+    <p>
+      Do you have any comments on Frank Vrablic? <br />
+      <textarea name = "feedback" id = "feedback" rows = "5" cols = "60"> </textarea>
+    </p>
+
+    <p>
+      <input type = "submit" value = "Submit Form">
+      <input type = "reset" value = "Reset Form">
+    </p>
+
+  </form>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Columbus Dong-->
+       <title>Javascript</title>
+    </head>
+
+    <script type = "text/javascript">
+        function numPicker(number) {
+          userName = prompt("What is your name?", "");
+          alert ("Hello " + userName + ", you picked number " + number + ".");
+        }
+    </script>
+    <body>
+      <img style = "text-align: center;" src = "Buttons.png" alt = "Buttons" usemap = "#btns">
+
+      <map name = "btns">
+        <area shape = "rect" coords = "0,0, 300, 300" href = "javascript:numPicker(1)" alt "btn1">
+        <area shape = "rect" coords = "300,0, 600, 300" href = "javascript:numPicker(2)" alt "btn1">
+        <area shape = "rect" coords = "600,0, 900, 300" href = "javascript:numPicker(3)" alt "btn1">
+
+      </map>
+    </body>
+</html>
